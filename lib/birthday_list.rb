@@ -9,6 +9,9 @@ class BirthdayList
   end
 
   def show
+    @list.each do |person|
+      puts "#{person[:name]}: #{person[:dob]}"
+    end
   end
-  
+
 end

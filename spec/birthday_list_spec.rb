@@ -10,5 +10,9 @@ describe BirthdayList do
     birthday_list = BirthdayList.new
     expect(birthday_list.add("Chris", "19/02/1991")).to eq([name: "Chris", dob: "19/02/1991"])
   end
-  
+
+  it "Responds to show" do
+    birthday_list = BirthdayList.new
+    expect(birthday_list).to respond_to(:show)
+  end
 end

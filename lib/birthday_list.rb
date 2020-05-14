@@ -1,4 +1,4 @@
-require 'date'
+require 'time'
 
 class BirthdayList
 
@@ -31,11 +31,11 @@ class BirthdayList
   end
 
   def today?(person)
-    Date.parse(person[:dob]).strftime("%d/%m") == date_today
+    Time.parse(person[:dob]).strftime("%d/%m") == date_today()
   end
 
   def age(person)
-    Time.now.year - Date.parse(person[:dob]).year
+    Time.now.year - Time.parse(person[:dob]).year
   end
 
 end

@@ -1,6 +1,5 @@
 require 'birthday_list'
 require 'timecop'
-require 'date'
 
 describe BirthdayList do
 

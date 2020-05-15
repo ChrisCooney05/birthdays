@@ -23,7 +23,9 @@ class BirthdayList
     end
   end
 
+
   private
+
 
   def date_today
     Time.now.strftime("%d/%m")
@@ -36,5 +38,4 @@ class BirthdayList
   def age(person)
     Time.now.year - Time.parse(person[:dob]).year
   end
-
 end

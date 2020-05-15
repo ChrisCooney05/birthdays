@@ -19,9 +19,7 @@ class BirthdayList
 
   def bday_message
     @list.each do |person|
-      if today?(person)
-        puts "Happy Birthday #{person[:name]}! you are #{age(person)} years old today!"
-      end
+      puts "Happy Birthday #{person[:name]}! you are #{age(person)} years old today!" if today?(person)
     end
   end
 
